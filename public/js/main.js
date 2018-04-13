@@ -31,19 +31,18 @@ function EnterPressed() {
   x = document.getElementById("MiddleBox");
   x.appendChild(para);
   x.scrollTop = x.scrollHeight;
-  setTimeout(function(){
-    reply();
-  }, 1000);
+  reply();
 }
 
 function reply() {
-    audio.play();
+
     socket.emit('Quest', Quest, function(replyFromBot) {
         console.log("hi");
         var para = document.createElement("p2");
         x = document.getElementById("MiddleBox");
         para.appendChild(document.createTextNode(replyFromBot));
         x.appendChild(para);
+        audio.play();
         x.scrollTop = x.scrollHeight;
     });
 }
