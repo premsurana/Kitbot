@@ -1,0 +1,81 @@
+<!Doctype html>
+<html>
+  <head>
+    <title>Kit's College of Engineering</title>
+    <link rel = "stylesheet" type = "text/css" href="css/main.css"/>
+    <script src="js/main.js"> </script>
+    <script src="js/socket.io.js"></script>
+  </head>
+  <body>
+    <div class="header">
+      <img id = "kitLogo" src="image/kitlogo.png"/>
+			<h1 id ="kit">KIT's College of Engineering</h1>
+			<h2 id = "kitsub">Accrediated 'A' grade by NAAC with CGPA 3.12</h2>
+      <p><br /></p>
+    </div>
+    <hr />
+
+    <div class = "content">
+      <div class="content-left">
+        <h1> Project on ChatBot </h1>
+        <p>
+          Project Mentor : Mrs.S.S.Kale.
+        </p>
+
+        <p>
+          Created by
+        </p>
+        <p>
+          Nikhil Shinde , Roll No : 42<br />
+          Prem Surana , Roll No : 45 <br />
+          Yogesh Waichal , Roll No : 48 <br />
+          Rohit Yadav , Roll No : 49  <br />
+          Prasad Zunjar , Roll No : 50 <br />
+        </p>
+
+      </div>
+      <div class="content-right">
+        <h1>Description on Chatbot</h1>
+        <p>
+          -> Chat bots are way more convenient then customer care because here you get answer for your FAQ's instantly
+        </p>
+        <p>
+          -> The Objective of this project is to share information regarding KIT’s College
+activities like admission enquiry , giving information regarding departments , sports, events,
+hostel etc to users without any paperwork or forms
+        </p>
+
+      </div>
+
+      <div class="float">
+			<button class="FloatButton" onclick="myFunction()"></button>
+		</div>
+
+		<script>
+			createBot();
+		</script>
+		<div class="Application-Box" style="display: none;">
+			<div class ="TopHead"></div>
+			<div id = "MiddleBox" class ="Middle">
+        <p2>Hi! how can i help you?</p2>
+			</div>
+			<div class="Text-Box">
+				<script>
+
+				</script>
+				<textarea id = "QuestionText" placeholder="Enter Your Question"></textarea>
+				<script>
+				document.getElementById('QuestionText').addEventListener('keypress', function(event) {
+						if (event.keyCode == 13) {
+								event.preventDefault();
+								EnterPressed();
+						}
+				});
+				</script>
+				<button class ="EnterButton" onclick="EnterPressed()">Enter</button>
+			</div>
+
+		</div>
+    </div>
+  </body>
+</html>

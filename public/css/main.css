@@ -1,0 +1,239 @@
+
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+.header {
+  background: rgba(255,233,172,0.3);
+  overflow: hidden;
+}
+
+.content .content-left h1 {
+  text-align: center;
+  font-family: inherit;
+  font-weight: inherit;
+}
+
+.content .content-left p {
+  text-align: center;
+  font-size: 20px;
+  font-family: monospace;
+  color: black;
+  line-height: 30px;
+}
+
+.content {
+  display: block;
+  width: inherit;
+  height: inherit;
+}
+
+.content .content-right h1 {
+  text-align: left;
+  font-family: inherit;
+  font-weight: inherit;
+}
+
+.content .content-right p {
+  text-align: left;
+  font-size: 20px;
+  font-family: monospace;
+  color: black;
+  line-height: 30px;
+}
+
+.content .content-left {
+  margin: 10px;
+  float: left;
+  width: 30%;
+  border-right: 1px solid;
+  height: 100%;
+}
+
+.content .content-right {
+  margin: 10px;
+  width: 65%;
+  position: relative;
+  float: left;
+  height: inherit;
+}
+
+* {
+  font-family: 'ubuntu',sans-serif;
+  color: #FF8C00;
+}
+
+hr{
+  margin: 0px;
+}
+.header img{
+
+  margin-left: 20px;
+  float: left;
+  width: 230px;
+  height: 200px;
+}
+
+.header h1 {
+
+  position: relative;
+  top: 10px;
+  left: 10px;
+  font-size: 68px;
+  font-weight: lighter;
+  letter-spacing: 2px;
+}
+
+.header h2 {
+  top: 5px;
+  left: 10px;
+  margin: 0;
+  line-height: 0;
+  position: relative;
+  font-weight: lighter;
+  letter-spacing: 2px;
+}
+
+.Application-Box {
+
+  display: run-in;
+  background: white;
+  border-radius: 10px;
+  position: fixed;
+  width: 450px;
+  height: 700px;
+  bottom: 150px;
+  right: 40px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.Application-Box .TopHead {
+
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  background: rgb(255,140,0);
+  position: inherit;
+  height: 100px;
+  width: inherit;
+}
+
+.Application-Box .Middle {
+
+  overflow-y: scroll;
+  overflow-x: hidden;
+  word-wrap: break-word;
+  position: absolute;
+  top: 100px;
+  background: transparent;
+  height: 540px;
+  width: 450px;
+  font-size: 18px;
+  color: black;
+}
+
+.Application-Box .Middle img {
+  border: 1px solid;
+  position: relative;
+  margin: 10px;
+  width: 40px;
+  height: 40px;
+}
+
+.Application-Box .Middle p1 {
+  background: rgba(255,140,0,0.5);
+  border-radius: 6px;
+  display: block;
+  position: relative;
+  left: 00px;
+  margin:10px;
+  font-size: inherit;
+  color: inherit;
+  max-width: 250px;
+  padding: 10px;
+}
+
+.Application-Box .Middle p2 {
+  background: rgba(200,200,200,0.5);
+  border-radius: 6px;
+  display: block;
+  position: relative;
+  left: 150px;
+  font-size: inherit;
+  color: inherit;
+  margin: 10px;
+  max-width: 260px;
+  display: inline-block;
+  padding: 10px;
+}
+
+.Application-Box .Text-Box {
+  background: rgba(200,200,200,0.5);
+  overflow: hidden;
+  padding: 0px;
+  width: inherit;
+  position: absolute;
+  bottom: 0px;
+  border-bottom-right-radius: inherit;
+  border-bottom-left-radius: inherit;
+  height: 60px;
+  border: 2px;
+}
+
+.Application-Box .Text-Box textarea {
+
+  border: none;
+  background: transparent;
+  outline: none !important;
+  resize: none;
+  padding: 0px;
+  color: black;
+  position: relative;
+  width: 350px;
+  height: inherit;
+  border-bottom-left-radius: inherit;
+  font-family: "intercom-font", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 20px;
+  overflow: hidden;
+  margin: 10px;
+}
+
+.Application-Box .Text-Box .EnterButton {
+  overflow: hidden;
+  position: absolute;
+  float: right;
+  height: inherit;
+  width: 100px;
+  background: transparent;
+  border: none;
+  border-left: 1px solid;
+  border-color: rgba(255,0,0,0.3);
+  right: -10px;
+  color: black;
+  outline: none;
+}
+
+.float{
+	position: fixed;
+	width:100px;
+	height:100px;
+	bottom:30px;
+	right:40px;
+	background-color:#FF8C00;
+	color:#FFF;
+	border-radius:50px;
+	text-align: center;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.float .FloatButton {
+
+    background: transparent;
+    border: none !important;
+    font-size:0;
+    width: 100px;
+    height: 100px;
+    outline: none;
+}
